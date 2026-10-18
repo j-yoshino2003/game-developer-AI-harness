@@ -1,0 +1,7 @@
+# Spec Kit records a sha256 for every vendor-managed file under this directory
+# in integrations/*.manifest.json, computed over the LF bytes written at install
+# time. With core.autocrlf=true a checkout would rewrite them as CRLF, so every
+# hash would mismatch and `specify integration status` would report all of them
+# as modified. Pin them to LF so the integrity record survives a clone on any
+# machine.
+* text=auto eol=lf

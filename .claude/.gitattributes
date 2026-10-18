@@ -1,0 +1,5 @@
+# The /speckit-* skills here are vendor-managed: their sha256 is recorded in
+# .specify/integrations/claude.manifest.json over the LF bytes written at
+# install time. Pin to LF so core.autocrlf=true cannot break that check on
+# checkout. See .specify/.gitattributes for the same rule on the other half.
+* text=auto eol=lf
